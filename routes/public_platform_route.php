@@ -1,0 +1,1 @@
+<?php Route::get('/', 'PublicPlatformController@main')->name('home');

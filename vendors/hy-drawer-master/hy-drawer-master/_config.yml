@@ -1,0 +1,126 @@
+title: hy-drawer
+email: mail@qwtel.com
+
+description: >
+  A touch-enabled drawer component for the modern web.
+baseurl: /hy-drawer
+url: https://qwtel.com
+
+author:
+  email: mail@qwtel.com
+  social:
+    github: https://github.com/qwtel/hy-drawer
+    npm: https://www.npmjs.com/package/hy-drawer
+    download: https://github.com/qwtel/hy-drawer/releases
+
+logo: /assets/icons/icon.svg
+
+copyright: © 2018 Florian Klampfer
+
+permalink: pretty
+
+google_analytics: UA-84025722-3
+
+accent_color: "#4fb1ba"
+accent_image:
+  background: "linear-gradient(to bottom,#193747 0%,#233e4c 30%,#3c929e 50%,#d5d5d4 70%,#cdccc8 100%)"
+  overlay: true
+
+# Build settings
+markdown: kramdown
+
+plugins:
+  - jekyll-default-layout
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-relative-links
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-titles-from-headings
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - package.json
+  - package-lock.json
+  - webpack.config.js
+  - src
+  - scripts
+include:
+  - LICENSE.md
+
+remote_theme: qwtel/hydejack@v8
+
+hydejack:
+  cookies_banner: true
+  no_mark_external: true
+
+defaults:
+  - scope:
+      path: usage/README.md
+    values:
+      menu: true
+      order: 1
+  - scope:
+      path: doc/README.md
+    values:
+      menu: true
+      order: 2
+  - scope:
+      path: example/README.md
+    values:
+      menu: true
+      order: 3
+  - scope:
+      path: licenses/README.md
+    values:
+      menu: true
+      order: 4
+
+titles_from_headings:
+  strip_title: true
+  collections: true
+
+relative_links:
+  collections: true
+
+optional_front_matter:
+  remove_originals: true
+
+readme_index:
+  remove_originals: true
+  with_frontmatter: true
+
+data_social:
+  github:
+    name: GitHub
+    icon: icon-github
+  npm:
+    name: npm
+    icon: icon-npm
+  download:
+    name: Download
+    icon: icon-box-add
+  email:
+    name: Email
+    icon: icon-mail
+
+keywords:
+  - drawer
+  - touch-events
+  - swipe-gestures
+  - webcomponent
+  - jquery
+  - rxjs
+  - hydejack
+  - jquery-plugin
+  - vanilla-js
+  - drawer-layout
+  - custom-element
+  - vanilla
+  - web-components
+  - ui-component
+  - reactive
+  - menu
+  - menu-navigation
